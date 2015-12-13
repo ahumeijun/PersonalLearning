@@ -4,6 +4,7 @@
 from wsgiref.simple_server import make_server
 from wsgi_hello import application
 
+print('will start HTTP server...')
 httpd = make_server('', 8000, application)
 print('Serving HTTP on port 8000...')
-httpd.server_forever()
+httpd.serve_forever()
