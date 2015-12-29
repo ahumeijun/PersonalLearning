@@ -17,3 +17,4 @@ resp = urllib.request.urlopen(req)
 content = resp.read()
 if(content):
     print(content)
+    print("你好世界")
